@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: admin
+Build-Jdk: 11.0.2
+Implementation-Title: employee
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: com.example
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-boot
+ -starter-parent/employee
+Created-By: Maven Integration for Eclipse
+
