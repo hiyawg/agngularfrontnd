@@ -8,11 +8,19 @@ import { UserFormComponent } from './user-form/user-form.component';
 import { HttpClientModule } from '@angular/common/http'
 import { UserService } from './user.service';
 
+import { UserDetailComponent } from './user-detail/user-detail.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { EditUserComponent } from './edit-user/edit-user.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     UserListComponent,
-    UserFormComponent
+    UserFormComponent,
+    
+    UserDetailComponent,
+    DashboardComponent,
+    EditUserComponent
   ],
   imports: [
     BrowserModule,
@@ -20,7 +28,7 @@ import { UserService } from './user.service';
     HttpClientModule,
     FormsModule
   ],
-  providers: [UserService],
+  providers: [UserService,UserListComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

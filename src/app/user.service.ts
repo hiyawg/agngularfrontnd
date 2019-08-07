@@ -18,6 +18,18 @@ export class UserService {
 
   }
 
+  public deleteEmployee(user:User) : Observable<User> {
+    return this.http.delete<User>("http://localhost:8080/users" + "/"+ user.id);
+  }
+  public findaUser(id : number): Observable<User> {
+      return this.http.get<User>("http://localhost:8080/users" + "/"+ id);
+  }
+
+  public updateUser(id : number,value: User): Observable<User>{
+    return this.http.put<User>("http://localhost:8080/users" + "/"+ id,value);
+  }
+  
+
      
   
 }

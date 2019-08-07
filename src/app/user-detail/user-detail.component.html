@@ -1,0 +1,46 @@
+
+<div class="row">
+    <div class="col-md-6">
+      <a routerLink="/" class="btn btn-link">
+        <i class="fa fa-arrow-circle-o-left"></i> Back to Dashboard
+      </a>
+    </div>
+    <div class="col-md-6">
+      <div class="btn-group pull-right">
+        <a routerLink="/user/edit/{{ id }}" class="btn btn-dark">
+          Edit
+        </a>
+        <button (click)="deleteEmployee(user)" routerLink="/" class="btn btn-danger">Delete</button>
+      </div>
+    </div>
+  </div>
+  <hr> 
+  <div *ngIf="user" class="card">
+    <h3 class="card-header">{{ user.name }} {{ user.email }}</h3>
+    <div class="card-body">
+      <div class="row">
+        <div class="cold-md-8 col-sm-6">
+          <h4>Client ID: {{ user.id }}</h4>
+        </div>
+        <div class="cold-md-8 col-sm-6">
+          <h3 class="pull-right">
+            {{user.name}}
+            
+            
+          </h3>
+          
+        </div>
+      </div>
+  
+      <hr>
+      
+    </div>
+  </div>
+
+
+
+
+
+
+
+
